@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification 🔔</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="menu-btn" onclick="handleShowSubMenu()">
+          <div class="dash-top"></div>
+          <div class="dash-bottom"></div>
+          <div class="dash-circle"></div>
+        </div>
+        <span class="header-title">Notifications</span>
+        <div
+          class="fa fa-search search-btn"
+          onclick="handleShowSearchInput()"
+        ></div>
+        <input type="text" class="search-input" placeholder="Search ..." />
+      </header>
+      <main>
+        <section>
+          <div class="point"></div>
+          <div class="notification">
+            <span class="time">9:24 AM</span>
+            <span class="name">Adham Nasser</span>
+            <span class="sub-title">posted a photo on your wall.</span>
+          </div>
+        </section>
+        <section>
+          <div class="point"></div>
+          <div class="notification">
+            <span class="time">8:19 AM</span>
+            <span class="name">Adham Nasser</span>
+            <span class="sub-title">commented your last post.</span>
+          </div>
+        </section>
+        <section>
+          <div class="point"></div>
+          <div class="notification">
+            <span class="time">Yesterday</span>
+            <span class="name">Adham Nasser</span>
+            <span class="sub-title">added you as friend.</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="sub-menu">
+      <div class="sub-menu-item">
+        <span class="fa fa-dashboard"></span>Dashboard
+      </div>
+      <div class="sub-menu-item"><span class="fa fa-user"></span>Profile</div>
+      <div class="sub-menu-item">
+        <span class="fa fa-bell"></span>Notifications
+      </div>
+      <div class="sub-menu-item">
+        <span class="fa fa-comments"></span>Messages
+      </div>
+      <div class="sub-menu-item"><span class="fa fa-gear"></span>Settings</div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f0f47bfbb1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #4c4c4c;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: #fff;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #242424;
+  border: 7px solid #3a3a3a;
+  border-radius: 50%;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
+
+.spinner {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+.spinner circle {
+  stroke: #f85b5b;
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 942;
+  animation: spinner 1s linear infinite;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+}
+
+@keyframes spinner {
+  from {
+    stroke-dashoffset: 942;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50% {
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50.001% {
+    transform: rotate(-90deg) scaleY(-1);
+  }
+  to {
+    stroke-dashoffset: 942;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+}
+
+.dots {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 6px dotted #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.date {
+  width: 100%;
+  font-size: 15px;
+}
+
+.time {
+  width: 100%;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  margin: 4px 0;
+}
